@@ -1,3 +1,18 @@
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, true)
+game.Players.LocalPlayer.PlayerGui.CharacterSelection.Character.Value = "Chara"
+wait(1)
+game.Players.LocalPlayer.Character.Head:WaitForChild("HealthBar"):Destroy()
+wait()
+
+game.Players.LocalPlayer.Backpack:WaitForChild("Main").CharaMoves:Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("RealKnife"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("HateArm"):Destroy()
+game.Players.LocalPlayer.Character:WaitForChild("HeartLocket"):Destroy()
+local pass = getrenv()._G.Pass
+local player = game.Players.LocalPlayer
+local character = player.Character
+local uis = game:GetService("UserInputService")
+
 wait(3)
 local netboost = Vector3.new(-30, 0, 0) --jitter (set to false to disable)
 local newanimate = true --disable the animate script and enable after reanimation
